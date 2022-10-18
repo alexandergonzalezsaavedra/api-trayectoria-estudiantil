@@ -11,10 +11,7 @@ function App() {
   const [resProgramas, setResProgramas] = useState([])
   const [programasEstudiante, setProgramasEstudiante] = useState([])
   const [resSemestres, setResSemestres] = useState([])
-
-
   console.log(programasEstudiante)
-
   return (
     <>
       <Cargando
@@ -27,11 +24,9 @@ function App() {
         establecerAutenticacion={establecerAutenticacion}
         autenticacion={autenticacion}
       />
-      <Header />
       {
         (() => {
           if (autenticacion.length !== 0) {
-            console.log(resProgramas)
             return (
               <PlanEstudios
                 estadoCarga={estadoCarga}
