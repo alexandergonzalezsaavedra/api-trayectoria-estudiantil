@@ -8,6 +8,7 @@ import ProgramasEstudiante from '../02-Programas/ProgramasEstudiante'
 import PensumProgramasEstudiante from '../02-Programas/PensumProgramasEstudiante'
 import BtnProgrma from '../02-Programas/BtnProgrma';
 import Materias from '../02-Programas/Materias';
+import Modal from '../Modal';
 
 const PintarInformacion = ({
     estadoCarga,
@@ -172,6 +173,9 @@ const PintarInformacion = ({
                         </Box>
                     </TabContext>
                 </Box>
+
+                <Modal />
+
             </div>
         </>
     )
